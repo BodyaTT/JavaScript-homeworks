@@ -21,7 +21,7 @@ else if(memory === null){
     break output;}
 }
 }
-goend: while(true){
+goend: while(memory !== null){
     color = prompt("Какой цвет телефона (Black, Silver, Gold)?");
     for(var i = 0; i < phone.color.length; i++){
     if(color === phone.color[i]){
