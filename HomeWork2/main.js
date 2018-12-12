@@ -27,10 +27,12 @@ goend: while(memory !== null){
     if(color === phone.color[i]){
         bill = memoryPrice + phone.colorPrice[i];
         document.write('<br>Цена телефона с цветом '+ phone.color[i] + ' = ' + bill  + '$');
+        document.write('<img src="./img/' + color + '.png">');
         break goend;
     }
     else if(color === null){
         document.write('<br>До встречи!');
+        document.write('<img src="./img/default.png" width=200px height = 200px> ');
         break goend;
     }
 }
