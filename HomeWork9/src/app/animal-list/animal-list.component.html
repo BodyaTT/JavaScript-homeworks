@@ -1,0 +1,13 @@
+<h3>Animal List</h3>
+<form>
+<p>Add new animal</p>
+<form>
+<input type="text" placeholder="New animal" [(ngModel)]="animalName" name="animal" id = "newAnimal" >
+<button class="add" (click) = "addAnimal()" >Add</button>
+</form>
+<ul>
+  <li *ngFor = "let animal of animals; let i = index">
+      {{animal.id}}. {{animal.name}}
+      <button class="delete" (click) = "deleted(i)">X</button>
+  </li>
+</ul>

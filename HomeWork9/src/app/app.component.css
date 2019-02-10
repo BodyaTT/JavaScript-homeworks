@@ -1,0 +1,10 @@
+a{
+    font-size: 15px;
+    color: red;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
